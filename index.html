@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rodízio de Carros em SP</title>
+</head>
+<body>
+    <h1>Rodízio de Veículos em SP</h1>
+    <p>Digite o número final da placa do seu veículo:</p>
+    <input type="text" id="placaInput" placeholder="Número final da placa">
+    <p>Selecione o dia da semana:</p>
+    <select id="diaSemana">
+        <option value="1">Segunda-feira</option>
+        <option value="2">Terça-feira</option>
+        <option value="3">Quarta-feira</option>
+        <option value="4">Quinta-feira</option>
+        <option value="5">Sexta-feira</option>
+        <option value="6">Sábado</option>
+        <option value="0">Domingo</option>
+    </select>
+    <p>Selecione o tipo de veículo:</p>
+    <select id="tipoVeiculo">
+        <option value="carro">Carro</option>
+        <option value="caminhao">Caminhão</option>
+    </select>
+    <p>Selecione a via desejada:</p>
+    <select id="via">
+        <option value="vermelhas">Vermelhas</option>
+        <option value="limitrofes">Limítrofes</option>
+    </select>
+    <button class="glow-on-hover" onclick="verificarRodizio()">Verificar Rodízio</button>
+    <p id="resultado"></p>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
